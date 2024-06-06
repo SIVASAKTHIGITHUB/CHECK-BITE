@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+body{
+background-image: url(backgroundimage1.png);
+background-repeat:no-repeat;
+background-attachment: fixed;
+background-size: 100% 100%;
+}
+body, h1, p {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+header {
+    width: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent background for header */
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+/* Style the navigation */
+nav {
+    display: flex;
+    justify-content: flex-end; /* Align items to the right */
+    padding: 10px 20px;
+}
+
+/* Style the navigation list */
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+/* Style each navigation list item */
+nav ul li {
+    margin-left: 20px;
+}
+
+/* Style the navigation links */
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    padding: 10px 15px;
+    transition: background 0.3s ease;
+}
+
+/* Change the background color on hover */
+nav ul li a:hover {
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 5px;
+}
+
+/* Style for the main content */
+main {
+    padding: 100px 20px; /* Ensure content is not hidden behind the header */
+}
+
+/* Adjust the position of the heading and paragraph */
+h1, p {
+    margin: 90px;
+    text-align: center;
+}
+.page {
+    display: none;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    margin: 20px;
+    border-radius: 10px;
+}
+.page.active {
+    display: block;
+}
+
+h1 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 300px;
+    margin: 0 auto;
+}
+
+form label {
+    margin-bottom: 5px;
+}
+
+form input {
+    margin-bottom: 10px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+        
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: flex-end;
+    }
+
+    nav ul li {
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
+}
+
+
+header {
+    background-color: #ff66b2; /* Pink */
+    color: #fff;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.page {
+    display: none;
+    padding: 20px;
+}
+
+.page.active {
+    display: block;
+}
+
+h1 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 300px;
+    margin: 0 auto;
+}
+
+form label {
+    margin-bottom: 5px;
+}
+
+form input {
+    margin-bottom: 10px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+form button {
+    padding-down: 10px;
+    background-color: #ff66b2; /* Pink */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #ff3399; /* Darker Pink */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+}
+</style>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+    <h1 style="text-align:center;">Welcome To Check Bite</h1>
+    <p>Enjoy Your Day With Healthier</p> 
+    <main id="content">
+        <!-- Content will be injected here -->
+    </main>
+    
+    <script src="script.js"></script>
+</body>
+</html>
+<html>
